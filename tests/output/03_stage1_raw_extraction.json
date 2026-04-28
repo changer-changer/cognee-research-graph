@@ -1,0 +1,346 @@
+{
+  "entities": {
+    "methods": [
+      {
+        "name": "DIFFCOT",
+        "description": "Diffusion-styled Chain of Thought framework that models CoT reasoning in a diffusion paradigm with trajectory-level revision",
+        "type": "method"
+      },
+      {
+        "name": "Step-level Forward Noising Process",
+        "description": "Noising process for CoT that operates at the step level using reward-ranked candidates",
+        "type": "technique"
+      },
+      {
+        "name": "Diffusion Sliding Window",
+        "description": "Window-based mechanism to iteratively denoise past steps while generating new ones during CoT reasoning",
+        "type": "technique"
+      },
+      {
+        "name": "Causal Diffusion Noise",
+        "description": "Noise scheduling mechanism that strengthens causal consistency across reasoning steps",
+        "type": "technique"
+      },
+      {
+        "name": "Reward-ranked Candidate Collection",
+        "description": "Collection of reasoning candidates ranked by reward scores for use in the noising process",
+        "type": "component"
+      }
+    ],
+    "problems": [
+      {
+        "name": "Chain-of-Thought Reasoning",
+        "description": "Step-by-step intermediate reasoning in LLMs for mathematical problem-solving",
+        "level": "task"
+      },
+      {
+        "name": "Error Accumulation in CoT",
+        "description": "Mistakes introduced in early stages of reasoning propagating through later steps leading to incorrect final answers",
+        "level": "challenge"
+      },
+      {
+        "name": "Exposure Bias in Autoregressive Decoding",
+        "description": "Train/test distribution mismatch where model is exposed only to correct prefixes during training but may condition on erroneous prefixes at inference",
+        "level": "sub_challenge"
+      },
+      {
+        "name": "Lack of Global Consistency in Multi-step Reasoning",
+        "description": "Step-wise optimization focusing on local alignment and ignoring future signals within the reasoning trajectory",
+        "level": "sub_challenge"
+      },
+      {
+        "name": "Inference-time Overhead of Search-based Methods",
+        "description": "Substantial computational cost of methods using external critics or search procedures like MCTS",
+        "level": "challenge"
+      }
+    ],
+    "resources": [
+      {
+        "name": "MATH-1",
+        "type": "dataset"
+      },
+      {
+        "name": "SVAMP",
+        "type": "dataset"
+      },
+      {
+        "name": "Qwen3-8B",
+        "type": "model"
+      },
+      {
+        "name": "Qwen3",
+        "type": "model"
+      },
+      {
+        "name": "Llama3",
+        "type": "model"
+      },
+      {
+        "name": "CPO",
+        "type": "model"
+      },
+      {
+        "name": "ToT",
+        "type": "model"
+      },
+      {
+        "name": "Step-DPO",
+        "type": "model"
+      },
+      {
+        "name": "Full-Step-DPO",
+        "type": "model"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "proposes",
+      "object_type": "Method",
+      "object_name": "DIFFCOT",
+      "evidence": "we propose Diffusion-styled Chain of Thought (DIFFCOT), which models CoT reasoning in a diffusion-styled framework"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "proposes",
+      "object_type": "Method",
+      "object_name": "Step-level Forward Noising Process",
+      "evidence": "We first present a step-level forward noising process for CoT using reward-ranked candidates (§3.1)"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "proposes",
+      "object_type": "Method",
+      "object_name": "Diffusion Sliding Window",
+      "evidence": "then apply a diffusion sliding window to iteratively denoise past steps while generating new ones (§3.2)"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "proposes",
+      "object_type": "Method",
+      "object_name": "Causal Diffusion Noise",
+      "evidence": "We further introduce causal diffusion noise to strengthen causal consistency across reasoning steps (§3.3)"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "proposes",
+      "object_type": "Method",
+      "object_name": "Reward-ranked Candidate Collection",
+      "evidence": "step-level forward noising process for CoT using reward-ranked candidates"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Step-level Forward Noising Process",
+      "evidence": "We first present a step-level forward noising process for CoT using reward-ranked candidates (§3.1)"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Diffusion Sliding Window",
+      "evidence": "then apply a diffusion sliding window to iteratively denoise past steps while generating new ones (§3.2)"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Causal Diffusion Noise",
+      "evidence": "We further introduce causal diffusion noise to strengthen causal consistency across reasoning steps (§3.3)"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Reward-ranked Candidate Collection",
+      "evidence": "step-level forward noising process for CoT using reward-ranked candidates"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "Step-level Forward Noising Process",
+      "predicate": "uses_technique",
+      "object_type": "Method",
+      "object_name": "Reward-ranked Candidate Collection",
+      "evidence": "step-level forward noising process for CoT using reward-ranked candidates"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "solves",
+      "object_type": "Problem",
+      "object_name": "Error Accumulation in CoT",
+      "evidence": "intermediate steps are not fixed once generated but can be adaptively corrected in light of later context"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "solves",
+      "object_type": "Problem",
+      "object_name": "Exposure Bias in Autoregressive Decoding",
+      "evidence": "Rather than defining reasoning as a strictly forward, prefix-conditioned process...our method jointly models all reasoning steps within a diffusion paradigm"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "solves",
+      "object_type": "Problem",
+      "object_name": "Lack of Global Consistency in Multi-step Reasoning",
+      "evidence": "effective CoT reasoning requires trajectory-level revision to enforce global consistency and recover from corrupted intermediate steps"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "solves",
+      "object_type": "Problem",
+      "object_name": "Inference-time Overhead of Search-based Methods",
+      "evidence": "beyond the substantial inference-time overhead of MCTS, these methods share a fundamental limitation that motivates rethinking of the CoT paradigm"
+    },
+    {
+      "subject_type": "Problem",
+      "subject_name": "Error Accumulation in CoT",
+      "predicate": "is_subtask_of",
+      "object_type": "Problem",
+      "object_name": "Chain-of-Thought Reasoning",
+      "evidence": "CoT reasoning is highly sensitive to potential errors, where mistakes introduced in the early stages can propagate through later steps"
+    },
+    {
+      "subject_type": "Problem",
+      "subject_name": "Exposure Bias in Autoregressive Decoding",
+      "predicate": "is_subtask_of",
+      "object_type": "Problem",
+      "object_name": "Chain-of-Thought Reasoning",
+      "evidence": "exposure bias that commonly plagues autoregressive generation and imitation learning"
+    },
+    {
+      "subject_type": "Problem",
+      "subject_name": "Lack of Global Consistency in Multi-step Reasoning",
+      "predicate": "is_subtask_of",
+      "object_type": "Problem",
+      "object_name": "Chain-of-Thought Reasoning",
+      "evidence": "step-wise optimization focuses on local alignment and ignores future signals within the reasoning trajectory"
+    },
+    {
+      "subject_type": "Problem",
+      "subject_name": "Inference-time Overhead of Search-based Methods",
+      "predicate": "is_subtask_of",
+      "object_type": "Problem",
+      "object_name": "Chain-of-Thought Reasoning",
+      "evidence": "Recent work has sought to optimize the exploration of reasoning branches in LLMs to reduce errors in CoT"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Method",
+      "object_name": "CPO",
+      "evidence": "Baselines guided by LLM self-verification signals, such as CPO and ToT"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Method",
+      "object_name": "ToT",
+      "evidence": "Baselines guided by LLM self-verification signals, such as CPO and ToT"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Method",
+      "object_name": "Step-DPO",
+      "evidence": "Step-level preference learning baselines, including Step-DPO and Full-Step-DPO"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Method",
+      "object_name": "Full-Step-DPO",
+      "evidence": "Step-level preference learning baselines, including Step-DPO and Full-Step-DPO"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Resource",
+      "object_name": "Qwen3-8B",
+      "evidence": "when applied to Qwen3-8B, CPO results in performance degradation on the MATH-1 dataset"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Resource",
+      "object_name": "Qwen3",
+      "evidence": "DIFFCOT can be directly applied to modern instruction-tuned language models, such as Qwen3 and Llama3"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Resource",
+      "object_name": "Llama3",
+      "evidence": "DIFFCOT can be directly applied to modern instruction-tuned language models, such as Qwen3 and Llama3"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Resource",
+      "object_name": "MATH-1",
+      "evidence": "CPO results in performance degradation on the MATH-1 dataset while achieving competitive performance on SVAMP"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "this_paper",
+      "predicate": "uses",
+      "object_type": "Resource",
+      "object_name": "SVAMP",
+      "evidence": "CPO results in performance degradation on the MATH-1 dataset while achieving competitive performance on SVAMP"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "improves_upon",
+      "object_type": "Method",
+      "object_name": "CPO",
+      "evidence": "DIFFCOT consistently outperforms existing PO approaches across the majority of benchmarks and evaluation settings considered"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "improves_upon",
+      "object_type": "Method",
+      "object_name": "ToT",
+      "evidence": "DIFFCOT consistently outperforms existing PO approaches across the majority of benchmarks and evaluation settings considered"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "improves_upon",
+      "object_type": "Method",
+      "object_name": "Step-DPO",
+      "evidence": "DIFFCOT consistently outperforms existing PO approaches across the majority of benchmarks and evaluation settings considered"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "improves_upon",
+      "object_type": "Method",
+      "object_name": "Full-Step-DPO",
+      "evidence": "DIFFCOT consistently outperforms existing PO approaches across the majority of benchmarks and evaluation settings considered"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "methods": [
+    {
+      "name": "DIFFCOT",
+      "description": "Diffusion-styled Chain of Thought framework that models CoT reasoning in a diffusion paradigm with trajectory-level revision",
+      "type": "method"
+    },
+    {
+      "name": "Step-level Forward Noising Process",
+      "description": "Noising process for CoT that operates at the step level using reward-ranked candidates",
+      "type": "technique"
+    },
+    {
+      "name": "Diffusion Sliding Window",
+      "description": "Window-based mechanism to iteratively denoise past steps while generating new ones during CoT reasoning",
+      "type": "technique"
+    },
+    {
+      "name": "Causal Diffusion Noise",
+      "description": "Noise scheduling mechanism that strengthens causal consistency across reasoning steps",
+      "type": "technique"
+    },
+    {
+      "name": "Reward-ranked Candidate Collection",
+      "description": "Collection of reasoning candidates ranked by reward scores for use in the noising process",
+      "type": "component"
+    }
+  ],
+  "problems": [
+    {
+      "name": "Chain-of-Thought",
+      "description": "Step-by-step intermediate reasoning in LLMs for mathematical problem-solving",
+      "level": "task"
+    },
+    {
+      "name": "Error Accumulation in CoT",
+      "description": "Mistakes introduced in early stages of reasoning propagating through later steps leading to incorrect final answers",
+      "level": "challenge"
+    },
+    {
+      "name": "Exposure Bias in Autoregressive Decoding",
+      "description": "Train/test distribution mismatch where model is exposed only to correct prefixes during training but may condition on erroneous prefixes at inference",
+      "level": "sub_challenge"
+    },
+    {
+      "name": "Lack of Global Consistency in Multi-step Reasoning",
+      "description": "Step-wise optimization focusing on local alignment and ignoring future signals within the reasoning trajectory",
+      "level": "sub_challenge"
+    },
+    {
+      "name": "Inference-time Overhead of Search-based Methods",
+      "description": "Substantial computational cost of methods using external critics or search procedures like MCTS",
+      "level": "challenge"
+    }
+  ],
+  "resources": [
+    {
+      "name": "MATH-1",
+      "type": "dataset"
+    },
+    {
+      "name": "SVAMP",
+      "type": "dataset"
+    },
+    {
+      "name": "Qwen3-8B",
+      "type": "model"
+    },
+    {
+      "name": "Qwen3",
+      "type": "model"
+    },
+    {
+      "name": "Llama3",
+      "type": "model"
+    },
+    {
+      "name": "CPO",
+      "type": "model"
+    },
+    {
+      "name": "ToT",
+      "type": "model"
+    },
+    {
+      "name": "Step-DPO",
+      "type": "model"
+    },
+    {
+      "name": "Full-Step-DPO",
+      "type": "model"
+    }
+  ]
+}

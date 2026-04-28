@@ -1,0 +1,88 @@
+{
+  "entities": {
+    "methods": [
+      {
+        "name": "DIFFCOT",
+        "description": "Diffusion-styled Chain-of-Thought framework that reformulates CoT reasoning as an iterative denoising process with sliding-window mechanism",
+        "type": "method"
+      }
+    ],
+    "problems": [
+      {
+        "name": "Chain-of-Thought Reasoning",
+        "description": "Step-by-step intermediate reasoning for mathematical problem-solving in LLMs",
+        "level": "task"
+      },
+      {
+        "name": "Error Accumulation in CoT",
+        "description": "Early mistakes propagating irreversibly through autoregressive decoding steps",
+        "level": "challenge"
+      },
+      {
+        "name": "Exposure Bias in CoT",
+        "description": "Model trained only on correct prefixes but inference may condition on erroneous intermediate steps",
+        "level": "challenge"
+      }
+    ],
+    "resources": [
+      {
+        "name": "MATH-1",
+        "type": "dataset"
+      },
+      {
+        "name": "SVAMP",
+        "type": "dataset"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "subject_type": "Paper",
+      "subject_name": "DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs",
+      "predicate": "proposes",
+      "object_type": "Method",
+      "object_name": "DIFFCOT",
+      "evidence": "we propose Diffusion-styled Chain of Thought (DIFFCOT), which models CoT reasoning in a diffusion-styled framework"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs",
+      "predicate": "addresses",
+      "object_type": "Problem",
+      "object_name": "Chain-of-Thought Reasoning",
+      "evidence": "Chain-of-Thought (CoT) reasoning improves multi-step mathematical problem solving in large language models"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs",
+      "predicate": "addresses",
+      "object_type": "Problem",
+      "object_name": "Error Accumulation in CoT",
+      "evidence": "mistakes introduced in the early stages can propagate through later steps, often leading to incorrect final answers"
+    },
+    {
+      "subject_type": "Paper",
+      "subject_name": "DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs",
+      "predicate": "addresses",
+      "object_type": "Problem",
+      "object_name": "Exposure Bias in CoT",
+      "evidence": "the model is exposed only to correct prefixes during training, whereas at inference time the prefixes may contain errors that accumulate across steps, resulting in exposure bias"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "solves",
+      "object_type": "Problem",
+      "object_name": "Error Accumulation in CoT",
+      "evidence": "intermediate steps are not fixed once generated but can be adaptively corrected in light of later context"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "solves",
+      "object_type": "Problem",
+      "object_name": "Exposure Bias in CoT",
+      "evidence": "our method jointly models all reasoning steps within a diffusion paradigm, enabling robust reasoning under realistic"
+    }
+  ]
+}

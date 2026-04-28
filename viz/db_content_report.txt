@@ -1,0 +1,57 @@
+======================================================================
+COGNEE GRAPH DATABASE CONTENT REPORT
+======================================================================
+
+Total Nodes: 16
+Total Edges: 18
+
+Node Type Breakdown:
+  Insight: 3
+  Method: 1
+  MethodRelations: 1
+  Paper: 1
+  PaperRelations: 1
+  Problem: 3
+  Resource: 6
+
+======================================================================
+ALL NODES
+======================================================================
+  [Insight] A single incoherent turn in a multi-turn dialogue causes complete dialogue failu...
+  [Insight] Deterministic generation (temperature 0) is intentionally used to expose reasoni...
+  [Insight] Models can appear locally correct while being globally incoherent, requiring exp...
+  [Method] ChaosBench-Logic
+  [MethodRelations] rels_of_ChaosBench-Logic
+  [Paper] ChaosBench-Logic: A Benchmark for Logical and Symbolic Reasoning on Chaotic Dynamical Systems
+  [PaperRelations] rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso
+  [Problem] Chaos-Randomness Confusion Detection
+  [Problem] LLM Symbolic Reasoning in Dynamical Systems
+  [Problem] Logical Coherence in Scientific Reasoning
+  [Resource] Claude 3.5 Sonnet
+  [Resource] Dialogue Accuracy
+  [Resource] GPT-4
+  [Resource] Gemini 2.5 Flash
+  [Resource] LLaMA-3 70B
+  [Resource] Logical Accuracy
+
+======================================================================
+ALL EDGES
+======================================================================
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --paper--> ChaosBench-Logic: A Benchmark for Logical and Symbolic Reasoning on Chaotic Dynamical Systems
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --addresses--> Chaos-Randomness Confusion Detection
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --addresses--> Logical Coherence in Scientific Reasoning
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --addresses--> LLM Symbolic Reasoning in Dynamical Systems
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --evaluates_on--> GPT-4
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --evaluates_on--> Claude 3.5 Sonnet
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --evaluates_on--> Gemini 2.5 Flash
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --evaluates_on--> LLaMA-3 70B
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --evaluates_on--> Logical Accuracy
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --evaluates_on--> Dialogue Accuracy
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --contains_insight--> A single incoherent turn in a multi-turn dialogue causes complete dialogue failu...
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --contains_insight--> Models can appear locally correct while being globally incoherent, requiring exp...
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --contains_insight--> Deterministic generation (temperature 0) is intentionally used to expose reasoni...
+  rels_of_ChaosBench-Logic: A Benchmark for Logical and Symbolic Reaso --proposes--> ChaosBench-Logic
+  rels_of_ChaosBench-Logic --solves--> Chaos-Randomness Confusion Detection
+  rels_of_ChaosBench-Logic --solves--> Logical Coherence in Scientific Reasoning
+  rels_of_ChaosBench-Logic --solves--> LLM Symbolic Reasoning in Dynamical Systems
+  rels_of_ChaosBench-Logic --method--> ChaosBench-Logic

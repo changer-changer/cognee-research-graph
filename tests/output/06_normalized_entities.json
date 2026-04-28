@@ -1,0 +1,60 @@
+{
+  "methods": [
+    {
+      "name": "DIFFCOT",
+      "description": "Diffusion-styled Chain-of-Thought framework that reformulates CoT reasoning as an iterative denoising process with sliding-window mechanism",
+      "type": "method"
+    },
+    {
+      "name": "Step-level Forward Noising",
+      "description": "Forward noising process for CoT using reward-ranked candidates to inject noise into reasoning steps",
+      "parent_method": "DIFFCOT",
+      "type": "technique"
+    },
+    {
+      "name": "Reward-ranked Candidate Collection",
+      "description": "Collecting candidates by reward scores for the forward noising process",
+      "parent_method": "Step-level Forward Noising",
+      "type": "component"
+    },
+    {
+      "name": "Diffusion Sliding-Window Mechanism",
+      "description": "Sliding window applied to iteratively denoise past steps while generating new ones",
+      "parent_method": "DIFFCOT",
+      "type": "technique"
+    },
+    {
+      "name": "Causal Diffusion Noise",
+      "description": "Noise mechanism to strengthen causal consistency across reasoning steps",
+      "parent_method": "DIFFCOT",
+      "type": "technique"
+    }
+  ],
+  "problems": [
+    {
+      "name": "Chain-of-Thought",
+      "description": "Step-by-step reasoning in LLMs for mathematical problem solving",
+      "level": "task"
+    },
+    {
+      "name": "Error Accumulation in CoT",
+      "description": "Early mistakes propagating irreversibly through autoregressive decoding steps",
+      "level": "challenge"
+    },
+    {
+      "name": "Exposure Bias in CoT",
+      "description": "Model trained only on correct prefixes but infers on potentially erroneous prefixes at test time",
+      "level": "challenge"
+    }
+  ],
+  "resources": [
+    {
+      "name": "MATH-1",
+      "type": "dataset"
+    },
+    {
+      "name": "SVAMP",
+      "type": "dataset"
+    }
+  ]
+}

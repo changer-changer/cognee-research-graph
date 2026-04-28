@@ -1,0 +1,96 @@
+======================================================================
+COGNEE GRAPH DATABASE CONTENT REPORT
+======================================================================
+
+Total Nodes: 30
+Node Type Breakdown:
+  Insight: 3
+  Method: 5
+  MethodRelations: 2
+  Paper: 1
+  PaperRelations: 1
+  Problem: 5
+  ProblemRelations: 4
+  Resource: 9
+
+======================================================================
+ALL NODES
+======================================================================
+  [Insight] Consistency across diverse settings is a more reliable indicator of method quali...
+  [Insight] LLM self-verification guided methods exhibit notable instability that is sensiti...
+  [Insight] Step-level preference learning alone is insufficient for stable reasoning behavi...
+  [Method] Causal Diffusion Noise
+  [Method] DIFFCOT
+  [Method] Diffusion Sliding Window
+  [Method] Reward-ranked Candidate Collection
+  [Method] Step-level Forward Noising
+  [MethodRelations] rels_of_DIFFCOT
+  [MethodRelations] rels_of_Step-level Forward Noising
+  [Paper] DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs
+  [Problem] Chain-of-Thought
+  [Problem] Error Accumulation in CoT
+  [Problem] Exposure Bias in Autoregressive Decoding
+  [Problem] Global Consistency in CoT
+  [Problem] Local Step-wise Optimization Limitation
+  [ProblemRelations] rels_of_Error Accumulation in CoT
+  [ProblemRelations] rels_of_Exposure Bias in Autoregressive Decoding
+  [ProblemRelations] rels_of_Global Consistency in CoT
+  [ProblemRelations] rels_of_Local Step-wise Optimization Limitation
+  [Resource] CPO
+  [Resource] Full-Step-DPO
+  [Resource] Llama3
+  [Resource] MATH-1
+  [Resource] Qwen3
+  [Resource] Qwen3-8B
+  [Resource] SVAMP
+  [Resource] Step-DPO
+  [Resource] ToT
+
+======================================================================
+ALL EDGES (Total: 41)
+======================================================================
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --paper--> [Paper] DIFFCOT: Diffusion-styled Chain-of-Thought Reasoni
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Chain-of-Thought
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Error Accumulation in CoT
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Exposure Bias in Autoregressive Decoding
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Global Consistency in CoT
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Local Step-wise Optimization Limitation
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] Qwen3-8B
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] Qwen3
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] Llama3
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] MATH-1
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] SVAMP
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] CPO
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] ToT
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] Step-DPO
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] Full-Step-DPO
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --proposes--> [Method] Diffusion Sliding Window
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --proposes--> [Method] Reward-ranked Candidate Collection
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --proposes--> [Method] Step-level Forward Noising
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --proposes--> [Method] Causal Diffusion Noise
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --proposes--> [Method] DIFFCOT
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --contains_insight--> [Insight] LLM self-verification guided methods exhibit notab
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --contains_insight--> [Insight] Step-level preference learning alone is insufficie
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --contains_insight--> [Insight] Consistency across diverse settings is a more reli
+  [MethodRelations] rels_of_DIFFCOT --solves--> [Problem] Error Accumulation in CoT
+  [MethodRelations] rels_of_DIFFCOT --solves--> [Problem] Exposure Bias in Autoregressive Decoding
+  [MethodRelations] rels_of_DIFFCOT --solves--> [Problem] Global Consistency in CoT
+  [MethodRelations] rels_of_DIFFCOT --solves--> [Problem] Local Step-wise Optimization Limitation
+  [MethodRelations] rels_of_DIFFCOT --contains--> [Method] Diffusion Sliding Window
+  [MethodRelations] rels_of_DIFFCOT --contains--> [Method] Step-level Forward Noising
+  [MethodRelations] rels_of_DIFFCOT --contains--> [Method] Causal Diffusion Noise
+  [MethodRelations] rels_of_DIFFCOT --method--> [Method] DIFFCOT
+  [MethodRelations] rels_of_Step-level Forward Noising --contains--> [Method] Reward-ranked Candidate Collection
+  [MethodRelations] rels_of_Step-level Forward Noising --method--> [Method] Step-level Forward Noising
+  [ProblemRelations] rels_of_Error Accumulation in CoT --is_subtask_of--> [Problem] Chain-of-Thought
+  [ProblemRelations] rels_of_Error Accumulation in CoT --problem--> [Problem] Error Accumulation in CoT
+  [ProblemRelations] rels_of_Exposure Bias in Autoregressive Decoding --is_subtask_of--> [Problem] Chain-of-Thought
+  [ProblemRelations] rels_of_Exposure Bias in Autoregressive Decoding --problem--> [Problem] Exposure Bias in Autoregressive Decoding
+  [ProblemRelations] rels_of_Global Consistency in CoT --is_subtask_of--> [Problem] Chain-of-Thought
+  [ProblemRelations] rels_of_Global Consistency in CoT --problem--> [Problem] Global Consistency in CoT
+  [ProblemRelations] rels_of_Local Step-wise Optimization Limitation --is_subtask_of--> [Problem] Chain-of-Thought
+  [ProblemRelations] rels_of_Local Step-wise Optimization Limitation --problem--> [Problem] Local Step-wise Optimization Limitation
+
+  ✅ No empty node names
+  ✅ No duplicate nodes

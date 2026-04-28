@@ -1,0 +1,62 @@
+======================================================================
+COGNEE GRAPH DATABASE CONTENT REPORT
+======================================================================
+
+Total Nodes: 17
+Node Type Breakdown:
+  Insight: 3
+  Method: 5
+  MethodRelations: 2
+  Paper: 1
+  PaperRelations: 1
+  Problem: 3
+  Resource: 2
+
+======================================================================
+ALL NODES
+======================================================================
+  [Insight] Diffusion-based iterative denoising at the reasoning-step level provides superio...
+  [Insight] LLM self-verification signals as training guidance are inherently unstable and s...
+  [Insight] Local step-wise optimization alone is insufficient for stable multi-step reasoni...
+  [Method] Causal Diffusion Noise
+  [Method] DIFFCOT
+  [Method] Diffusion Sliding-Window Mechanism
+  [Method] Reward-ranked Candidate Collection
+  [Method] Step-level Forward Noising
+  [MethodRelations] rels_of_DIFFCOT
+  [MethodRelations] rels_of_Step-level Forward Noising
+  [Paper] DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought Reasoning in LLMs
+  [Problem] Chain-of-Thought
+  [Problem] Error Accumulation in CoT
+  [Problem] Exposure Bias in CoT
+  [Resource] MATH-1
+  [Resource] SVAMP
+
+======================================================================
+ALL EDGES (Total: 21)
+======================================================================
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --paper--> [Paper] DIFFCOT: Diffusion-styled Chain-of-Thought Reasoni
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --contains_insight--> [Insight] LLM self-verification signals as training guidance
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --contains_insight--> [Insight] Local step-wise optimization alone is insufficient
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --contains_insight--> [Insight] Diffusion-based iterative denoising at the reasoni
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --proposes--> [Method] DIFFCOT
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] MATH-1
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --evaluates_on--> [Resource] SVAMP
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Chain-of-Thought
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Error Accumulation in CoT
+  [PaperRelations] rels_of_DIFFCOT: Diffusion-styled Chain-of-Thought --addresses--> [Problem] Exposure Bias in CoT
+  [Insight] LLM self-verification signals as training guidance --from_paper--> [Paper] DIFFCOT: Diffusion-styled Chain-of-Thought Reasoni
+  [Insight] Local step-wise optimization alone is insufficient --from_paper--> [Paper] DIFFCOT: Diffusion-styled Chain-of-Thought Reasoni
+  [Insight] Diffusion-based iterative denoising at the reasoni --from_paper--> [Paper] DIFFCOT: Diffusion-styled Chain-of-Thought Reasoni
+  [MethodRelations] rels_of_DIFFCOT --method--> [Method] DIFFCOT
+  [MethodRelations] rels_of_DIFFCOT --solves--> [Problem] Error Accumulation in CoT
+  [MethodRelations] rels_of_DIFFCOT --solves--> [Problem] Exposure Bias in CoT
+  [MethodRelations] rels_of_DIFFCOT --contains--> [Method] Step-level Forward Noising
+  [MethodRelations] rels_of_DIFFCOT --contains--> [Method] Diffusion Sliding-Window Mechanism
+  [MethodRelations] rels_of_DIFFCOT --contains--> [Method] Causal Diffusion Noise
+  [MethodRelations] rels_of_Step-level Forward Noising --method--> [Method] Step-level Forward Noising
+  [MethodRelations] rels_of_Step-level Forward Noising --contains--> [Method] Reward-ranked Candidate Collection
+
+  ✅ No empty node names
+  ✅ No duplicate nodes

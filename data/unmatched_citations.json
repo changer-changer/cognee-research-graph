@@ -1,0 +1,236 @@
+[
+  {
+    "title": "The Llama 3 Model Card",
+    "authors": [
+      "Ai@meta"
+    ],
+    "year": 2024,
+    "raw_text": "\n\t\n\t\t\n\t\t\tAi@meta\n\t\t\n\t\t\n\t\tThe Llama 3 Model Card\n\t\t\n\t\t\t2024\n\t\t\t\n\t\t\n\t\n\tAI@Meta. 2024. The Llama 3 Model Card. https: //github.com/meta-llama/llama3/blob/main/MODEL CARD.md. Accessed: 2026-01-04.\n\n\n"
+  },
+  {
+    "title": "Claude 3.5 Sonnet",
+    "authors": [
+      "Anthropic"
+    ],
+    "year": 2024,
+    "raw_text": "\n\t\n\t\t\n\t\t\tAnthropic\n\t\t\n\t\t\n\t\tClaude 3.5 Sonnet\n\t\t\n\t\t\t2024\n\t\t\t\n\t\t\n\t\n\tAnthropic. 2024. Claude 3.5 Sonnet. https://www. anthropic.com/news/claude-3-5-sonnet. Accessed: 2026-01-04.\n\n\n"
+  },
+  {
+    "title": "An Introduction to Chaotic Dynamical Systems",
+    "authors": [
+      "Devaney"
+    ],
+    "year": 1989,
+    "raw_text": "\n\t\n\t\tAn Introduction to Chaotic Dynamical Systems\n\t\t\n\t\t\tRLDevaney\n\t\t\n\t\t\n\t\t\t1989\n\t\t\tAddison-Wesley\n\t\t\tReading, MA\n\t\t\n\t\n\t2 edition\n\tDevaney, R. L. 1989. An Introduction to Chaotic Dy- namical Systems. R"
+  },
+  {
+    "title": "Chaos as an Interpretable Benchmark for Forecasting and Data-Driven Modelling",
+    "authors": [
+      "Gilpin"
+    ],
+    "year": 2021,
+    "raw_text": "\n\t\n\t\tChaos as an Interpretable Benchmark for Forecasting and Data-Driven Modelling\n\t\t\n\t\t\tWGilpin\n\t\t\n\t\n\t\n\t\tJournal of Physics: Complexity\n\t\t\n\t\t\t2\n\t\t\t4\n\t\t\t45007\n\t\t\t2021\n\t\t\n\t\n\tGilpin, W. 2021. Chaos as a"
+  },
+  {
+    "title": "Gemini 2.5 Flash",
+    "authors": [
+      "Deepmind"
+    ],
+    "year": 2025,
+    "raw_text": "\n\t\n\t\t\n\t\t\tGoogleDeepmind\n\t\t\n\t\t\n\t\tGemini 2.5 Flash\n\t\t\n\t\t\t2025\n\t\t\t\n\t\t\n\t\n\tGoogle DeepMind. 2025. Gemini 2.5 Flash. https: //deepmind.google/technologies/gemini/. Accessed: 2026-01-04.\n\n\n"
+  },
+  {
+    "title": "Measuring Mathematical Problem Solving With the MATH Dataset",
+    "authors": [
+      "Hendrycks",
+      "Burns",
+      "Kadavath",
+      "Arora",
+      "Basart",
+      "Tang",
+      "Song",
+      "Steinhardt"
+    ],
+    "year": 2021,
+    "raw_text": "\n\t\n\t\tMeasuring Mathematical Problem Solving With the MATH Dataset\n\t\t\n\t\t\tDHendrycks\n\t\t\n\t\t\n\t\t\tCBurns\n\t\t\n\t\t\n\t\t\tSKadavath\n\t\t\n\t\t\n\t\t\tAArora\n\t\t\n\t\t\n\t\t\tSBasart\n\t\t\n\t\t\n\t\t\tETang\n\t\t\n\t\t\n\t\t\tDSong\n\t\t\n\t\t\n\t\t\tJSteinhard"
+  },
+  {
+    "title": "A Two-Dimensional Mapping with a Strange Attractor",
+    "authors": [
+      "Hénon"
+    ],
+    "year": 1976,
+    "raw_text": "\n\t\n\t\tA Two-Dimensional Mapping with a Strange Attractor\n\t\t\n\t\t\tMHénon\n\t\t\n\t\n\t\n\t\tCommunications in Mathematical Physics\n\t\t\n\t\t\t50\n\t\t\t1\n\t\t\t\n\t\t\t1976\n\t\t\n\t\n\tHénon, M. 1976. A Two-Dimensional Mapping with a St"
+  },
+  {
+    "title": "Diffuse Instability in Reaction Systems",
+    "authors": [
+      "Kuramoto",
+      "Tsuzuki"
+    ],
+    "year": 1978,
+    "raw_text": "\n\t\n\t\tDiffuse Instability in Reaction Systems\n\t\t\n\t\t\tYKuramoto\n\t\t\n\t\t\n\t\t\tITsuzuki\n\t\t\n\t\t\n\t\t\t1978\n\t\t\tProgress of Theoretical Physics\n\t\t\t59\n\t\t\t\n\t\t\n\t\n\tKuramoto, Y.; and Tsuzuki, I. 1978. Diffuse Instability "
+  },
+  {
+    "title": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+    "authors": [
+      "Lin",
+      "Hilton",
+      "Evans"
+    ],
+    "year": 2022,
+    "raw_text": "\n\t\n\t\tTruthfulQA: Measuring How Models Mimic Human Falsehoods\n\t\t\n\t\t\tSLin\n\t\t\n\t\t\n\t\t\tJHilton\n\t\t\n\t\t\n\t\t\tOEvans\n\t\t\n\t\n\t\n\t\tProceedings of the 60th Annual Meeting of the Association for Computational Linguistic"
+  },
+  {
+    "title": "LogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning",
+    "authors": [
+      "Liu",
+      "Cui",
+      "Liu",
+      "Huang",
+      "Wang",
+      "Zhang"
+    ],
+    "year": 2020,
+    "raw_text": "\n\t\n\t\tLogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning\n\t\t\n\t\t\tJLiu\n\t\t\n\t\t\n\t\t\tLCui\n\t\t\n\t\t\n\t\t\tHLiu\n\t\t\n\t\t\n\t\t\tDHuang\n\t\t\n\t\t\n\t\t\tYWang\n\t\t\n\t\t\n\t\t\tYZhang\n\t\t\n\t\n\t\n\t\tProceedings of "
+  },
+  {
+    "title": "Deterministic Nonperiodic Flow",
+    "authors": [
+      "Lorenz"
+    ],
+    "year": 1963,
+    "raw_text": "\n\t\n\t\tDeterministic Nonperiodic Flow\n\t\t\n\t\t\tENLorenz\n\t\t\n\t\n\t\n\t\tJournal of the Atmospheric Sciences\n\t\t\n\t\t\t20\n\t\t\t2\n\t\t\t\n\t\t\t1963\n\t\t\n\t\n\tLorenz, E. N. 1963. Deterministic Nonperiodic Flow. Journal of the Atmos"
+  },
+  {
+    "title": "Simple Mathematical Models with Very Complicated Dynamics",
+    "authors": [
+      "May"
+    ],
+    "year": 1976,
+    "raw_text": "\n\t\n\t\tSimple Mathematical Models with Very Complicated Dynamics\n\t\t\n\t\t\tRMMay\n\t\t\n\t\n\t\n\t\tNature\n\t\t\n\t\t\t261\n\t\t\t\n\t\t\t1976\n\t\t\n\t\n\tMay, R. M. 1976. Simple Mathematical Models with Very Complicated Dynamics. Natur"
+  },
+  {
+    "title": "Chaos in Dynamical Systems",
+    "authors": [
+      "Ott"
+    ],
+    "year": 2002,
+    "raw_text": "\n\t\n\t\tChaos in Dynamical Systems\n\t\t\n\t\t\tEOtt\n\t\t\n\t\t\n\t\t\t2002\n\t\t\tCambridge University Press\n\t\t\tCambridge, UK\n\t\t\n\t\n\t2 edition\n\tOtt, E. 2002. Chaos in Dynamical Systems. Cam- bridge, UK: Cambridge University"
+  },
+  {
+    "title": "Model-Free Prediction of Large Spatiotemporally Chaotic Systems from Data: A Reservoir Computing Approach",
+    "authors": [
+      "Pathak",
+      "Hunt",
+      "Girvan",
+      "Lu",
+      "Ott"
+    ],
+    "year": 2018,
+    "raw_text": "\n\t\n\t\tModel-Free Prediction of Large Spatiotemporally Chaotic Systems from Data: A Reservoir Computing Approach\n\t\t\n\t\t\tJPathak\n\t\t\n\t\t\n\t\t\tBHunt\n\t\t\n\t\t\n\t\t\tMGirvan\n\t\t\n\t\t\n\t\t\tZLu\n\t\t\n\t\t\n\t\t\tEOtt\n\t\t\n\t\n\t\n\t\tPhysica"
+  },
+  {
+    "title": "An Equation for Continuous Chaos",
+    "authors": [
+      "Rössler"
+    ],
+    "year": 1976,
+    "raw_text": "\n\t\n\t\tAn Equation for Continuous Chaos\n\t\t\n\t\t\tOERössler\n\t\t\n\t\n\t\n\t\tPhysics Letters A\n\t\t\n\t\t\t57\n\t\t\t5\n\t\t\t\n\t\t\t1976\n\t\t\n\t\n\tRössler, O. E. 1976. An Equation for Continuous Chaos. Physics Letters A, 57(5): 397-39"
+  },
+  {
+    "title": "Nonlinear Analysis of Hydrodynamic Instability in Laminar Flames-I. Derivation of Basic Equations",
+    "authors": [
+      "Sivashinsky"
+    ],
+    "year": 1977,
+    "raw_text": "\n\t\n\t\tNonlinear Analysis of Hydrodynamic Instability in Laminar Flames-I. Derivation of Basic Equations\n\t\t\n\t\t\tGISivashinsky\n\t\t\n\t\n\t\n\t\tActa Astronautica\n\t\t\n\t\t\t4\n\t\t\t11\n\t\t\t\n\t\t\t1977\n\t\t\n\t\n\tSivashinsky, G. I."
+  },
+  {
+    "title": "Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models",
+    "authors": [
+      "Srivastava",
+      "Rastogi",
+      "Rao"
+    ],
+    "year": 2022,
+    "raw_text": "\n\t\n\t\t\n\t\t\tASrivastava\n\t\t\n\t\t\n\t\t\tARastogi\n\t\t\n\t\t\n\t\t\tARao\n\t\t\n\t\tarXiv:2206.04615\n\t\tBeyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models\n\t\t\n\t\t\t2022\n\t\t\n\t\n\tSrivastava, A"
+  },
+  {
+    "title": "Nonlinear Dynamics and Chaos: With Applications to Physics",
+    "authors": [
+      "Strogatz"
+    ],
+    "year": 2015,
+    "raw_text": "\n\t\n\t\t\n\t\t\tSHStrogatz\n\t\t\n\t\n\t\n\t\tNonlinear Dynamics and Chaos: With Applications to Physics\n\t\tBoulder, CO\n\t\t\n\t\t\tWestview Press\n\t\t\t2015\n\t\t\n\t\n\t2 edition\n\tStrogatz, S. H. 2015. Nonlinear Dynamics and Chaos: "
+  },
+  {
+    "title": "ChaosBench-Logic",
+    "authors": [
+      "Thomas"
+    ],
+    "year": 2026,
+    "raw_text": "\n\t\n\t\tChaosBench-Logic\n\t\t\n\t\t\tNThomas\n\t\t\n\t\t\n\t\n\t\n\t\tChaosBench-Logic: A Benchmark for Logical and Symbolic Reasoning on Chaotic Dynamical Systems\n\t\t\n\t\t\t2026\n\t\t\t\n\t\t\n\t\n\tThomas, N. 2026. ChaosBench-Logic: A "
+  },
+  {
+    "title": "11 / ChaosBench -Logic",
+    "authors": [
+      "Thomas"
+    ],
+    "year": 2026,
+    "raw_text": "\n\t\n\t\t11 / ChaosBench -Logic\n\t\t\n\t\t\tNThomas\n\t\t\n\t\t\n\t\n\t\n\t\tChaosBench-Logic Dataset\n\t\t\n\t\t\t2026\n\t\t\t\n\t\t\n\t\n\tThomas, N. 2026. ChaosBench-Logic Dataset. https: / / huggingface . co / datasets / 11NOel11 / Chaos"
+  },
+  {
+    "title": "On the Theory of the Brownian Motion",
+    "authors": [
+      "Uhlenbeck",
+      "Ornstein"
+    ],
+    "year": 1930,
+    "raw_text": "\n\t\n\t\tOn the Theory of the Brownian Motion\n\t\t\n\t\t\tGEUhlenbeck\n\t\t\n\t\t\n\t\t\tLSOrnstein\n\t\t\n\t\n\t\n\t\tPhysical Review\n\t\t\n\t\t\t36\n\t\t\t5\n\t\t\t\n\t\t\t1930\n\t\t\n\t\n\tUhlenbeck, G. E.; and Ornstein, L. S. 1930. On the Theory of th"
+  },
+  {
+    "title": "SciBench: Evaluating College-Level Scientific Problem-Solving Abilities of Large Language Models",
+    "authors": [
+      "Wang",
+      "Hu",
+      "Lu",
+      "Zhu",
+      "Zhang",
+      "Subramaniam",
+      "Loomba",
+      "Zhang",
+      "Sun",
+      "Wang"
+    ],
+    "year": 2024,
+    "raw_text": "\n\t\n\t\tSciBench: Evaluating College-Level Scientific Problem-Solving Abilities of Large Language Models\n\t\t\n\t\t\tXWang\n\t\t\n\t\t\n\t\t\tZHu\n\t\t\n\t\t\n\t\t\tPLu\n\t\t\n\t\t\n\t\t\tYZhu\n\t\t\n\t\t\n\t\t\tJZhang\n\t\t\n\t\t\n\t\t\tSSubramaniam\n\t\t\n\t\t\n\t\t"
+  },
+  {
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "authors": [
+      "Wei",
+      "Wang",
+      "Schuurmans",
+      "Bosma",
+      "Ichter",
+      "Xia",
+      "Chi",
+      "Le",
+      "Zhou"
+    ],
+    "year": 2022,
+    "raw_text": "\n\t\n\t\tChain-of-Thought Prompting Elicits Reasoning in Large Language Models\n\t\t\n\t\t\tJWei\n\t\t\n\t\t\n\t\t\tXWang\n\t\t\n\t\t\n\t\t\tDSchuurmans\n\t\t\n\t\t\n\t\t\tMBosma\n\t\t\n\t\t\n\t\t\tBIchter\n\t\t\n\t\t\n\t\t\tFXia\n\t\t\n\t\t\n\t\t\tEHChi\n\t\t\n\t\t\n\t\t\tQVLe\n\t\t"
+  },
+  {
+    "title": "ReClor: A Reading Comprehension Dataset Requiring Logical Reasoning",
+    "authors": [
+      "Yu",
+      "Jiang",
+      "Dong",
+      "Feng"
+    ],
+    "year": 2020,
+    "raw_text": "\n\t\n\t\tReClor: A Reading Comprehension Dataset Requiring Logical Reasoning\n\t\t\n\t\t\tWYu\n\t\t\n\t\t\n\t\t\tZJiang\n\t\t\n\t\t\n\t\t\tYDong\n\t\t\n\t\t\n\t\t\tJFeng\n\t\t\n\t\n\t\n\t\tProceedings of the Eighth International Conference on Learning"
+  }
+]

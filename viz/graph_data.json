@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "paper",
+      "label": "ChaosBench-Logic: A Benchmark for Logical and Symb",
+      "type": "Paper"
+    },
+    {
+      "id": "method_0",
+      "label": "Chain-of-Thought",
+      "type": "Method",
+      "desc": "Structured prompting technique for multi-step reasoning"
+    },
+    {
+      "id": "method_1",
+      "label": "Tool-Augmented Reasoning",
+      "type": "Method",
+      "desc": "Approach that augments LLMs with external tools for reasoning"
+    },
+    {
+      "id": "problem_0",
+      "label": "LLM",
+      "type": "Problem",
+      "desc": "Evaluating LLM performance on deductive and symbolic reasoning tasks with formal"
+    },
+    {
+      "id": "problem_1",
+      "label": "Domain-Specific Misconception Diagnostics",
+      "type": "Problem",
+      "desc": "Identifying systematic errors in LLMs related to specialized domain semantics li"
+    },
+    {
+      "id": "problem_2",
+      "label": "Scientific QA and Domain Reasoning",
+      "type": "Problem",
+      "desc": "Question answering grounded in scientific domains requiring quantitative and sym"
+    },
+    {
+      "id": "resource_0",
+      "label": "CHAOSBENCH-LOGIC",
+      "type": "Resource"
+    },
+    {
+      "id": "resource_1",
+      "label": "BIG-Bench",
+      "type": "Resource"
+    },
+    {
+      "id": "resource_2",
+      "label": "SciBench",
+      "type": "Resource"
+    },
+    {
+      "id": "insight_0",
+      "label": "Strict global coherence metrics reveal that models can achie",
+      "type": "Insight",
+      "confidence": "medium"
+    },
+    {
+      "id": "insight_1",
+      "label": "Models frequently produce locally plausible per-turn answers",
+      "type": "Insight",
+      "confidence": "medium"
+    },
+    {
+      "id": "insight_2",
+      "label": "Deterministic evaluation at temperature zero with robust nor",
+      "type": "Insight",
+      "confidence": "medium"
+    }
+  ],
+  "edges": [
+    {
+      "from": "paper",
+      "to": "method_0",
+      "label": "proposes/uses"
+    },
+    {
+      "from": "paper",
+      "to": "method_1",
+      "label": "proposes/uses"
+    },
+    {
+      "from": "paper",
+      "to": "problem_0",
+      "label": "addresses"
+    },
+    {
+      "from": "paper",
+      "to": "problem_1",
+      "label": "addresses"
+    },
+    {
+      "from": "paper",
+      "to": "problem_2",
+      "label": "addresses"
+    },
+    {
+      "from": "paper",
+      "to": "resource_0",
+      "label": "evaluates_on"
+    },
+    {
+      "from": "paper",
+      "to": "resource_1",
+      "label": "evaluates_on"
+    },
+    {
+      "from": "paper",
+      "to": "resource_2",
+      "label": "evaluates_on"
+    },
+    {
+      "from": "paper",
+      "to": "insight_0",
+      "label": "contains_insight"
+    },
+    {
+      "from": "paper",
+      "to": "insight_1",
+      "label": "contains_insight"
+    },
+    {
+      "from": "paper",
+      "to": "insight_2",
+      "label": "contains_insight"
+    }
+  ]
+}

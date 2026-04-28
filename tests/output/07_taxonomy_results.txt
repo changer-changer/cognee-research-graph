@@ -1,0 +1,21 @@
+======================================================================
+RECURSIVE TAXONOMY BUILDER RESULTS
+======================================================================
+
+Methods in DB: 5
+Method tree root: Diffusion-based Chain-of-Thought Methods (level 1)
+- Diffusion-based Chain-of-Thought Methods [method_category]
+  - Causal Diffusion Noise [leaf]
+  - DIFFCOT [leaf]
+  - Diffusion Sliding Window [leaf]
+  - Reward-ranked Candidate Collection [leaf]
+  - Step-level Forward Noising [leaf]
+
+Problems in DB: 5
+Problem tree root: Chain-of-Thought Limitations and Failure Modes (level 1)
+- Chain-of-Thought Limitations and Failure Modes [problem_category]
+  - Chain-of-Thought [leaf]
+  - Error Accumulation in CoT [leaf]
+  - Exposure Bias in Autoregressive Decoding [leaf]
+  - Global Consistency in CoT [leaf]
+  - Local Step-wise Optimization Limitation [leaf]

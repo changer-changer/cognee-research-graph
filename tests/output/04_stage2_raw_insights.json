@@ -1,0 +1,47 @@
+{
+  "insights": [
+    {
+      "statement": "LLM self-verification signals cause notable instability in preference optimization, with performance degradation that is sensitive to both model and task distributions.",
+      "type": "empirical_finding",
+      "confidence": "medium",
+      "evidence_quote": "Baselines guided by LLM self-verification signals, such as CPO and ToT, exhibit notable instability across models and datasets. For example, when applied to Qwen3-8B, CPO results in performance degradation on the MATH-1 dataset while achieving competitive performance on SVAMP, indicating sensitivity to both model and task distributions.",
+      "related_method_names": [
+        "CPO",
+        "ToT",
+        "Self-Verification"
+      ],
+      "related_problem_names": [
+        "Preference Optimization",
+        "Chain-of-Thought Reasoning"
+      ]
+    },
+    {
+      "statement": "Local step-wise optimization alone is insufficient for stable reasoning behavior across diverse evaluation scenarios.",
+      "type": "boundary_condition",
+      "confidence": "medium",
+      "evidence_quote": "Step-level preference learning baselines, including Step-DPO and Full-Step-DPO, generally achieve great improvements but still suffer from occasional performance drops under certain settings. This suggests that relying solely on local step-wise optimization may not be sufficient to ensure stable reasoning behavior across diverse evaluation scenarios.",
+      "related_method_names": [
+        "Step-DPO",
+        "Full-Step-DPO"
+      ],
+      "related_problem_names": [
+        "Step-level Preference Learning",
+        "Reasoning Stability"
+      ]
+    },
+    {
+      "statement": "Consistency and robustness across settings can outweigh achieving single best results on individual benchmarks for reliable reasoning improvement.",
+      "type": "empirical_finding",
+      "confidence": "medium",
+      "evidence_quote": "Although it does not achieve the single best result in every individual setting, such as on SVAMP with the Qwen3-8B backbone, where Full-Step-DPO attains slightly higher accuracy, DIFFCOT consistently ranks among the top-performing methods across all settings. Moreover, the improvements achieved by DIFFCOT are substantial in magnitude and stable across different model sizes and datasets, highlighting its robustness and reliability.",
+      "related_method_names": [
+        "DIFFCOT",
+        "Full-Step-DPO"
+      ],
+      "related_problem_names": [
+        "Reliable Reasoning Improvement",
+        "Cross-Benchmark Generalization"
+      ]
+    }
+  ]
+}

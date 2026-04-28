@@ -1,0 +1,62 @@
+{
+  "sub_methods": [
+    {
+      "name": "Step-level Forward Noising",
+      "description": "Forward noising process for CoT using reward-ranked candidates to inject noise into reasoning steps",
+      "parent_method": "DIFFCOT",
+      "type": "technique"
+    },
+    {
+      "name": "Reward-ranked Candidate Collection",
+      "description": "Collecting candidates by reward scores for the forward noising process",
+      "parent_method": "Step-level Forward Noising",
+      "type": "component"
+    },
+    {
+      "name": "Diffusion Sliding-Window Mechanism",
+      "description": "Sliding window applied to iteratively denoise past steps while generating new ones",
+      "parent_method": "DIFFCOT",
+      "type": "technique"
+    },
+    {
+      "name": "Causal Diffusion Noise",
+      "description": "Noise mechanism to strengthen causal consistency across reasoning steps",
+      "parent_method": "DIFFCOT",
+      "type": "technique"
+    }
+  ],
+  "relations": [
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Step-level Forward Noising",
+      "evidence": "We first present a step-level forward noising process for CoT using reward-ranked candidates (§3.1)"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "Step-level Forward Noising",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Reward-ranked Candidate Collection",
+      "evidence": "step-level forward noising process for CoT using reward-ranked candidates"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Diffusion Sliding-Window Mechanism",
+      "evidence": "then apply a diffusion sliding window to iteratively denoise past steps while generating new ones (§3.2)"
+    },
+    {
+      "subject_type": "Method",
+      "subject_name": "DIFFCOT",
+      "predicate": "contains",
+      "object_type": "Method",
+      "object_name": "Causal Diffusion Noise",
+      "evidence": "We further introduce causal diffusion noise to strengthen causal consistency across reasoning steps (§3.3)"
+    }
+  ]
+}

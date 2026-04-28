@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ChaosBench-Logic Knowledge Graph</title>
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+#container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); padding: 24px; }
+h1 { margin: 0 0 8px 0; font-size: 22px; color: #1a1a1a; }
+h2 { margin: 24px 0 12px 0; font-size: 16px; color: #444; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }
+#mynetwork { width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 8px; background: #fafafa; }
+.eval-box { background: #f8f9fa; border-left: 4px solid #ff9800; padding: 16px; margin: 16px 0; border-radius: 4px; }
+.eval-box h3 { margin: 0 0 8px 0; color: #e65100; font-size: 15px; }
+.eval-box ul { margin: 4px 0; padding-left: 20px; }
+.eval-box li { margin: 4px 0; line-height: 1.6; }
+.ok { color: #2e7d32; font-weight: 600; }
+.warn { color: #f57c00; font-weight: 600; }
+.err { color: #c62828; font-weight: 600; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 12px 0; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+.stat-card { background: #f0f4f8; padding: 16px; border-radius: 8px; text-align: center; }
+.stat-num { font-size: 28px; font-weight: 700; color: #1565c0; }
+.stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+th { background: #f0f4f8; font-weight: 600; color: #333; }
+tr:hover { background: #fafafa; }
+</style>
+</head>
+<body>
+<div id="container">
+<h1>ChaosBench-Logic 科研认知图谱可视化</h1>
+<p style="color:#666;margin:4px 0 16px 0;font-size:14px;">论文: <em>ChaosBench-Logic: A Benchmark for Logical and Symbolic Reasoning on Chaotic Dynamical Systems</em> (Noel Thomas, MBZUAI)</p>
+
+<div class="stats">
+  <div class="stat-card"><div class="stat-num">12</div><div class="stat-label">图谱节点</div></div>
+  <div class="stat-card"><div class="stat-num">11</div><div class="stat-label">关系边</div></div>
+  <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">提取方法</div></div>
+  <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">识别问题</div></div>
+  <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">洞察发现</div></div>
+  <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">相关资源</div></div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><span class="dot" style="background:#e53935;"></span>Paper</div>
+  <div class="legend-item"><span class="dot" style="background:#1e88e5;"></span>Method</div>
+  <div class="legend-item"><span class="dot" style="background:#43a047;"></span>Problem</div>
+  <div class="legend-item"><span class="dot" style="background:#fb8c00;"></span>Resource</div>
+  <div class="legend-item"><span class="dot" style="background:#8e24aa;"></span>Insight</div>
+</div>
+
+<div id="mynetwork"></div>
+
+<h2>正确性评估</h2>
+<div class="eval-box">
+<h3>总体判断: <span class="warn">部分正确，存在显著偏差</span></h3>
+<p style="margin:8px 0;line-height:1.7;">这篇论文是<strong>Benchmark论文</strong>（基准测试），而非方法论文。LLM提取的图谱在结构上成立，但<strong>实体类型归类存在根本性问题</strong>。</p>
+</div>
+
+<h2>逐项核查</h2>
+<table>
+<tr><th>提取项</th><th>LLM结果</th><th>PDF实际内容</th><th>评估</th></tr>
+<tr>
+  <td><strong>Methods</strong></td>
+  <td>Chain-of-Thought, Tool-Augmented Reasoning</td>
+  <td>论文<strong>没有提出</strong>这些方法，它们只是baseline使用的prompting技术</td>
+  <td><span class="err">错误</span></td>
+</tr>
+<tr>
+  <td><strong>核心贡献</strong></td>
+  <td>CHAOSBENCH-LOGIC 被标记为 Resource</td>
+  <td>ChaosBench-Logic是论文的<strong>主要贡献/基准测试</strong>，含30个动力系统、11个谓词、621问题</td>
+  <td><span class="warn">类型不当</span></td>
+</tr>
+<tr>
+  <td><strong>Problems</strong></td>
+  <td>LLM, Domain-Specific Misconception Diagnostics, Scientific QA</td>
+  <td>基本方向正确，但<strong>遗漏关键问题</strong>：组合推理(compositional reasoning)、混沌理论推理、多轮对话一致性</td>
+  <td><span class="warn">不完整</span></td>
+</tr>
+<tr>
+  <td><strong>Insights</strong></td>
+  <td>3条：对话一致性崩溃、逻辑不一致性掩藏、确定性评估</td>
+  <td>与论文Results章节内容<strong>基本吻合</strong></td>
+  <td><span class="ok">正确</span></td>
+</tr>
+<tr>
+  <td><strong>关系</strong></td>
+  <td>this_paper proposes CHAOSBENCH-LOGIC</td>
+  <td>关系语义合理，但"proposes"的对象应为"benchmark"而非"method"</td>
+  <td><span class="warn">语义偏移</span></td>
+</tr>
+<tr>
+  <td><strong>遗漏实体</strong></td>
+  <td>无</td>
+  <td><strong>严重遗漏</strong>：30个动力系统(Lorenz/Rossler等)、11个逻辑谓词、7个任务家族(Atomic QA/Multi-hop/Analogy等)、评估模型(GPT-4/Claude/Gemini/LLaMA-3)</td>
+  <td><span class="err">重大遗漏</span></td>
+</tr>
+</table>
+
+<h2>问题根因分析</h2>
+<div class="eval-box" style="border-left-color:#c62828;">
+<h3 style="color:#c62828;">1. 提示词偏见 (Prompt Bias)</h3>
+<p>提取prompt要求LLM提取"methods"，但benchmark论文没有"方法"。LLM被迫将baseline技术(CoT/Tool-Augmented)填充为methods，导致<strong>类型错误</strong>。</p>
+</div>
+<div class="eval-box" style="border-left-color:#c62828;">
+<h3 style="color:#c62828;">2. 领域知识缺失</h3>
+<p>LLM未能识别论文中的<strong>具体科学实体</strong>：Lorenz-63/84/96、Rossler、Henon等动力系统；Chaotic(s)、Deterministic(s)、PosLyap(s)等11个谓词；ODEs/maps/PDEs/stochastic processes等系统类别。</p>
+</div>
+<div class="eval-box" style="border-left-color:#f57c00;">
+<h3 style="color:#f57c00;">3. 实体类型混淆</h3>
+<p>CHAOSBENCH-LOGIC在relations中被标记为"Method"类型，在entities中被标记为"Resource"类型。实际上它应该是一种新的节点类型如"<strong>Benchmark</strong>"或"<strong>Contribution</strong>"。</p>
+</div>
+
+<h2>改进建议</h2>
+<table>
+<tr><th>优先级</th><th>改进项</th><th>具体做法</th></tr>
+<tr><td><span class="err">高</span></td><td>支持论文类型识别</td><td>先让LLM判断论文类型(method/benchmark/survey)，再决定提取策略</td></tr>
+<tr><td><span class="err">高</span></td><td>增强领域实体提取</td><td>在prompt中明确要求提取具体系统名称、数学概念、评估指标</td></tr>
+<tr><td><span class="warn">中</span></td><td>扩展节点类型</td><td>增加Benchmark、Dataset、Model、Metric等学术专用类型</td></tr>
+<tr><td><span class="warn">中</span></td><td>关系类型精化</td><td>区分"evaluates"、"compares"、"uses_as_baseline"等benchmark专用关系</td></tr>
+<tr><td><span class="ok">低</span></td><td>后处理校验</td><td>对提取结果进行一致性检查（如验证实体是否在同一句子中同时出现）</td></tr>
+</table>
+
+</div>
+
+<script type="text/javascript">
+const nodes = new vis.DataSet([
+  {id: 'paper', label: 'ChaosBench-Logic\n(Benchmark Paper)', group: 'Paper', title: 'Noel Thomas, MBZUAI\nEvaluates LLM reasoning on chaotic dynamical systems', value: 30},
+  {id: 'm1', label: 'Chain-of-Thought\nPrompting', group: 'Method', title: 'Structured prompting for multi-step reasoning\n(Used as baseline, NOT proposed)', value: 15},
+  {id: 'm2', label: 'Tool-Augmented\nReasoning', group: 'Method', title: 'LLMs with external tools for reasoning\n(Used as baseline, NOT proposed)', value: 15},
+  {id: 'p1', label: 'LLM Reasoning\nEvaluation', group: 'Problem', title: 'Evaluating LLM performance on deductive/symbolic tasks', value: 18},
+  {id: 'p2', label: 'Domain-Specific\nMisconception', group: 'Problem', title: 'Systematic errors in LLMs related to chaos theory semantics', value: 18},
+  {id: 'p3', label: 'Scientific QA\n& Domain Reasoning', group: 'Problem', title: 'QA grounded in scientific domains with formal logic', value: 18},
+  {id: 'r1', label: 'CHAOSBENCH-LOGIC\n(Benchmark)', group: 'Resource', title: '30 systems, 11 predicates, 621 questions\nMain contribution of the paper', value: 25},
+  {id: 'r2', label: 'BIG-Bench', group: 'Resource', title: 'Broad benchmark for LLM evaluation', value: 12},
+  {id: 'r3', label: 'SciBench', group: 'Resource', title: 'Quantitative scientific problem solving benchmark', value: 12},
+  {id: 'i1', label: 'Dialogue coherence\ncollapses to 0', group: 'Insight', title: 'Single incoherent turn collapses entire dialogue score', value: 14},
+  {id: 'i2', label: 'Local plausible\nmask inconsistency', group: 'Insight', title: 'Per-turn answers look correct but logic is inconsistent', value: 14},
+  {id: 'i3', label: 'Temperature-zero\nreveals failures', group: 'Insight', title: 'Deterministic eval exposes consistency failures', value: 14},
+]);
+
+const edges = new vis.DataSet([
+  {from: 'paper', to: 'm1', label: 'uses (baseline)', dashes: true, color: {color: '#999'}},
+  {from: 'paper', to: 'm2', label: 'uses (baseline)', dashes: true, color: {color: '#999'}},
+  {from: 'paper', to: 'p1', label: 'addresses'},
+  {from: 'paper', to: 'p2', label: 'addresses'},
+  {from: 'paper', to: 'p3', label: 'addresses'},
+  {from: 'paper', to: 'r1', label: 'proposes', width: 3, color: {color: '#e53935'}},
+  {from: 'paper', to: 'r2', label: 'cites'},
+  {from: 'paper', to: 'r3', label: 'cites'},
+  {from: 'paper', to: 'i1', label: 'finds'},
+  {from: 'paper', to: 'i2', label: 'finds'},
+  {from: 'paper', to: 'i3', label: 'finds'},
+  {from: 'r1', to: 'p1', label: 'evaluates'},
+  {from: 'r1', to: 'p2', label: 'diagnoses'},
+]);
+
+const container = document.getElementById('mynetwork');
+const data = { nodes: nodes, edges: edges };
+const options = {
+  groups: {
+    Paper: { color: {background: '#ffcdd2', border: '#e53935'}, shape: 'box', font: {size: 16, color: '#b71c1c'} },
+    Method: { color: {background: '#bbdefb', border: '#1e88e5'}, shape: 'ellipse' },
+    Problem: { color: {background: '#c8e6c9', border: '#43a047'}, shape: 'ellipse' },
+    Resource: { color: {background: '#ffe0b2', border: '#fb8c00'}, shape: 'database' },
+    Insight: { color: {background: '#e1bee7', border: '#8e24aa'}, shape: 'diamond' },
+  },
+  edges: {
+    font: {size: 12, align: 'middle'},
+    smooth: {type: 'continuous'},
+    arrows: {to: {enabled: true, scaleFactor: 0.8}},
+  },
+  physics: {
+    forceAtlas2Based: {
+      gravitationalConstant: -60,
+      centralGravity: 0.005,
+      springLength: 200,
+      springConstant: 0.08,
+    },
+    maxVelocity: 50,
+    solver: 'forceAtlas2Based',
+    timestep: 0.35,
+    stabilization: {iterations: 150},
+  },
+  interaction: { hover: true, tooltipDelay: 200 },
+};
+
+new vis.Network(container, data, options);
+</script>
+</body>
+</html>
