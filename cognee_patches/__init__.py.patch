@@ -1,0 +1,8 @@
+# Patch for cognee/__init__.py
+# Version: 1.0.3
+# Purpose: Clear proxy environment variables to avoid SOCKS proxy issues
+# Added after dotenv.load_dotenv() call:
+
+import os
+for _proxy_var in ['http_proxy', 'https_proxy', 'HTTP_PROXY', 'HTTPS_PROXY', 'all_proxy', 'ALL_PROXY']:
+    os.environ.pop(_proxy_var, None)
