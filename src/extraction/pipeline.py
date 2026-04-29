@@ -1,18 +1,16 @@
 import json
 import sys
 sys.path.insert(0, '/home/cuizhixing/cognee-env/lib/python3.10/site-packages')
+sys.path.insert(0, '/home/cuizhixing/research_graph')
 
 import os
 import asyncio
 from typing import Optional
 
-from cognee.tasks.storage import add_data_points
+# Initialize Cognee BEFORE any other imports (creates relational DB + default user)
+from src.config.cognee_init import ensure_cognee_initialized_async
 
-# Configure Cognee to use local fastembed embeddings (avoid external embedding API failures)
-import cognee
-cognee.config.set_embedding_provider("fastembed")
-cognee.config.set_embedding_model("jinaai/jina-embeddings-v3")
-cognee.config.set_embedding_dimensions(1024)
+from cognee.tasks.storage import add_data_points
 
 from src.models.academic_nodes import (
     Paper, Method, Problem, Insight, Resource,
@@ -90,6 +88,9 @@ class AcademicExtractor:
         self.resolver = resolver or EntityResolver("data/aliases.json")
 
     async def extract(self, paper_struct: PaperStruct, paper_id: str) -> dict:
+        # Ensure Cognee is initialized (creates relational DB + default user)
+        await ensure_cognee_initialized_async()
+
         # Paper metadata for prompt injection
         paper_title = paper_struct.title
         authors = ", ".join(paper_struct.authors) if paper_struct.authors else "Unknown"

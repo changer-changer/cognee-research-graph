@@ -2,11 +2,13 @@ import json
 import os
 import sys
 sys.path.insert(0, '/home/cuizhixing/cognee-env/lib/python3.10/site-packages')
+sys.path.insert(0, '/home/cuizhixing/research_graph')
 
 from typing import List
 from cognee.infrastructure.engine import DataPoint
 from cognee.tasks.storage import add_data_points
 
+from src.config.cognee_init import ensure_cognee_initialized_async
 from src.parsing.grobid_client import PaperStruct
 from src.config import UNMATCHED_CITATIONS_PATH
 
@@ -24,6 +26,8 @@ async def build_citations(paper_struct: PaperStruct, existing_papers: List[str])
     paper_struct: GROBID解析结果
     existing_papers: 库中已有论文的标题列表
     """
+    await ensure_cognee_initialized_async()
+
     citations = []
     unmatched = []
 

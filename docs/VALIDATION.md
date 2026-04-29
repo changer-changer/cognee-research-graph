@@ -140,6 +140,8 @@ Step-level Forward Noising contains Reward-ranked Candidate Collection — ✅
 | is_subtask_of 边缺失 | Problem.parent 不创建图边 | 新增 ProblemRelations 容器 |
 | 关系名称不匹配 | Resolver 规范化后 relation 未更新 | 关系名称也经过 resolver |
 | Resource 为空 | 数据集仅在 Experiments 提及 | Stage 1a 输入加入 Experiments 前 2000 字符 |
+| 所有 search 失败 | 未调用 `cognee.setup()`，无 default user | 新增 `src/config/cognee_init.py` 自动初始化 |
+| Kuzu `std::bad_alloc` | Kuzu DB 文件损坏 | 删除损坏文件，系统自动重建 |
 
 ### 5.2 已知未修复
 

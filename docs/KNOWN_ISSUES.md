@@ -97,7 +97,17 @@
 
 ---
 
-### 3.2 单线程处理
+### 3.2 Cognee 初始化依赖
+
+**问题**: `cognee.setup()` 必须在任何操作前调用，否则搜索会失败。我们的系统之前未调用，导致所有 search 类型报 `SearchPreconditionError: no database/default user found`。
+
+**修复**: 新增 `src/config/cognee_init.py` 集中初始化模块，在 `add_data_points` 前自动调用 `cognee.setup()`。已更新 `extraction/pipeline.py`、`taxonomy/builder.py`、`pipeline/citations.py`。
+
+**状态**: 已修复。
+
+---
+
+### 3.3 单线程处理
 
 **问题**: 当前 Pipeline 是顺序执行（1a → 1b → 2 → resolution → store），未并行化。
 

@@ -1,5 +1,6 @@
 import sys
 sys.path.insert(0, '/home/cuizhixing/cognee-env/lib/python3.10/site-packages')
+sys.path.insert(0, '/home/cuizhixing/research_graph')
 
 from typing import List, Optional, Dict, Any
 import numpy as np
@@ -8,6 +9,7 @@ from sklearn.cluster import AgglomerativeClustering
 from cognee.infrastructure.engine import DataPoint
 from cognee.tasks.storage import add_data_points
 
+from src.config.cognee_init import ensure_cognee_initialized_async
 from src.models.academic_nodes import Method, Problem
 
 
@@ -69,6 +71,8 @@ class RecursiveTaxonomyBuilder:
 
     async def build_method_tree(self, methods: List[Method]) -> Optional[TaxonomyNode]:
         """Build recursive taxonomy tree from leaf methods. Returns the root node."""
+        await ensure_cognee_initialized_async()
+
         if not methods:
             return None
         if len(methods) == 1:
@@ -103,6 +107,8 @@ class RecursiveTaxonomyBuilder:
 
     async def build_problem_tree(self, problems: List[Problem]) -> Optional[TaxonomyNode]:
         """Build recursive taxonomy tree from leaf problems. Returns the root node."""
+        await ensure_cognee_initialized_async()
+
         if not problems:
             return None
         if len(problems) == 1:
@@ -292,6 +298,8 @@ class TaxonomyBuilder(RecursiveTaxonomyBuilder):
 
 async def build_problem_tree_legacy(problems: List[Problem]) -> List[Problem]:
     """Legacy function - kept for compatibility."""
+    await ensure_cognee_initialized_async()
+
     if len(problems) < 2:
         return problems
 

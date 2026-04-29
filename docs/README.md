@@ -13,6 +13,7 @@
 | [PROMPTS.md](PROMPTS.md) | Stage 1a/1b/2 的完整 Prompt 文本和设计 rationale | 算法/Prompt 工程师 |
 | [VALIDATION.md](VALIDATION.md) | 测试结果、有效/无效设计、性能数据 | 质量/测试工程师 |
 | [KNOWN_ISSUES.md](KNOWN_ISSUES.md) | 所有已知限制、未来优化方向、优先级 | 产品经理/规划者 |
+| [COGNEE_INVESTIGATION.md](COGNEE_INVESTIGATION.md) | Cognee 功能全面调查报告 | 架构/维护开发者 |
 
 ---
 
@@ -35,6 +36,7 @@
 ### 3. 核心文件
 
 ```
+src/config/cognee_init.py    ← Cognee 初始化（setup + 配置）
 src/extraction/prompts.py    ← LLM Prompt 定义（Stage 1a/1b/2）
 src/extraction/pipeline.py   ← 提取管道主逻辑
 src/models/academic_nodes.py ← 数据模型定义
